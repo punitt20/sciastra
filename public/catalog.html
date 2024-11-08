@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Development Course - SciAstra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">SciAstra</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-left">
+                <span class="offer-badge">70% OFF - Limited Time</span>
+                <h1>Full Stack Development Course</h1>
+                <p class="hero-description">Master both frontend and backend development with real-world projects</p>
+                <div class="course-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span>15,000+ students</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-star"></i>
+                        <span>4.8 (2.5k+ reviews)</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-clock"></i>
+                        <span>40+ hours</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="course-card">
+                    <div class="instructor-section">
+                        <p>Instructor</p>
+                        <div class="instructor-info">
+                            <img src="path/to/instructor.jpg" alt="Instructor">
+                            <div class="instructor-details">
+                                <span>Senior</span>
+                                <span>Full Stack Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-section">
+                        <div class="price">
+                            <h2>₹4,999</h2>
+                            <span class="original-price">₹14,999</span>
+                        </div>
+                        <button class="enroll-btn" onclick="window.location.href='payment.html'">Enroll Now</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

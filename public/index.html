@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">SciAstra</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="landing">
+        <h2>FULL STACK [70% OFF]</h2>
+        <p>Learn to build modern websites with HTML, CSS, and JavaScript.</p>
+        <button onclick="window.location.href='catalog.html'">Know More</button>
+    </section>
+
+    <section id="courses">
+        <h3>Featured Courses</h3>
+        <div class="course-grid">
+            <div class="course-card">
+                <h4>Web Development</h4>
+                <p>Learn to build modern websites with HTML, CSS, and JavaScript.</p>
+                <button onclick="location.href='catalog.html'">View Course</button>
+            </div>
+            <div class="course-card">
+                <h4>Python Programming</h4>
+                <p>Master Python programming from basics to advanced concepts.</p>
+                <button onclick="location.href='catalog.html'">View Course</button>
+            </div>
+            <div class="course-card">
+                <h4>Data Science</h4>
+                <p>Explore data analysis, visualization, and machine learning.</p>
+                <button onclick="location.href='catalog.html'">View Course</button>
+            </div>
+            <div class="course-card">
+                <h4>Mobile App Dev</h4>
+                <p>Create iOS and Android apps using modern frameworks.</p>
+                <button onclick="location.href='catalog.html'">View Course</button>
+            </div>
+            <div class="course-card">
+                <h4>UI/UX Design</h4>
+                <p>Design beautiful and functional user interfaces.</p>
+                <button onclick="location.href='catalog.html'">View Course</button>
+            </div>
+            <div class="course-card">
+                <h4>Cloud Computing</h4>
+                <p>Learn AWS, Azure, and cloud infrastructure.</p>
+                <button onclick="location.href='catalog.html'">View Course</button>
+            </div>
+        </div>
+        <div class="courses-cta">
+            <button onclick="window.location.href='courses.html'">Search More Courses</button>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h3>Latest Blog Posts</h3>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://via.placeholder.com/400x250" alt="Blog post image">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-category">Web Development</div>
+                    <h4>Getting Started with Modern Web Development</h4>
+                    <p>Learn the essential tools and technologies needed to become a modern web developer...</p>
+                    <div class="blog-footer">
+                        <span class="blog-date">March 15, 2024</span>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://via.placeholder.com/400x250" alt="Blog post image">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-category">Programming</div>
+                    <h4>Top Programming Languages in 2024</h4>
+                    <p>Discover the most in-demand programming languages and their applications...</p>
+                    <div class="blog-footer">
+                        <span class="blog-date">March 12, 2024</span>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://via.placeholder.com/400x250" alt="Blog post image">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-category">Career</div>
+                    <h4>Building Your Tech Career Portfolio</h4>
+                    <p>Tips and strategies for creating an impressive tech portfolio that stands out...</p>
+                    <div class="blog-footer">
+                        <span class="blog-date">March 10, 2024</span>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="blog-cta">
+            <button onclick="location.href='blog.html'">View All Posts</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CoursePlatform. All rights reserved.</p>
+    </footer>
+</body>
+</html>

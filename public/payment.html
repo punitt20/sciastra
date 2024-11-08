@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment | Course Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">SciAstra</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="payment-container">
+        <div class="payment-progress">
+            <div class="progress-step completed">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Cart</span>
+            </div>
+            <div class="progress-step active">
+                <i class="fas fa-credit-card"></i>
+                <span>Payment</span>
+            </div>
+            <div class="progress-step">
+                <i class="fas fa-check-circle"></i>
+                <span>Confirmation</span>
+            </div>
+        </div>
+
+        <div class="payment-card">
+            <div class="order-summary">
+                <h3><i class="fas fa-receipt"></i> Order Summary</h3>
+                <div class="order-details">
+                    <div class="course-info">
+                        <img src="course-thumbnail.jpg" alt="Course Thumbnail">
+                        <div>
+                            <h4>Course Title</h4>
+                            <p><i class="fas fa-user"></i> Instructor Name</p>
+                            <span class="course-access">Lifetime Access</span>
+                        </div>
+                    </div>
+                    <div class="price-info">
+                        <div class="price-row">
+                            <span>Original Price:</span>
+                            <span>$99.99</span>
+                        </div>
+                        <div class="price-row discount">
+                            <span>Discount:</span>
+                            <span>-$20.00</span>
+                        </div>
+                        <div class="price-row total">
+                            <span>Total:</span>
+                            <span>$79.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-methods">
+                <h3>Select Payment Method</h3>
+                <div class="payment-options">
+                    <div class="payment-option active">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Credit/Debit Card</span>
+                    </div>
+                    <div class="payment-option">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>UPI</span>
+                    </div>
+                </div>
+
+                <form id="cardPaymentForm" class="payment-form">
+                    <div class="form-group">
+                        <label>Card Number</label>
+                        <input type="text" placeholder="1234 5678 9012 3456" maxlength="19">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Expiry Date</label>
+                            <input type="text" placeholder="MM/YY" maxlength="5">
+                        </div>
+                        <div class="form-group">
+                            <label>CVV</label>
+                            <input type="password" placeholder="123" maxlength="3">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Name on Card</label>
+                        <input type="text" placeholder="John Doe">
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-lock"></i> Pay $79.99 Securely
+                    </button>
+                </form>
+
+                <form id="upiPaymentForm" class="payment-form" style="display: none;">
+                    <div class="form-group">
+                        <label>UPI ID</label>
+                        <input type="text" placeholder="yourname@upi">
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-lock"></i> Pay $79.99 with UPI
+                    </button>
+                </form>
+            </div>
+
+            <div class="security-badges">
+                <div class="badge">
+                    <i class="fas fa-lock"></i>
+                    <span>Secure Payment</span>
+                </div>
+                <div class="badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>SSL Encrypted</span>
+                </div>
+                <div class="badge">
+                    <i class="fas fa-undo"></i>
+                    <span>30-Day Refund</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="payment-popup" id="paymentPopup">
+        <div class="popup-content">
+            <i class="fas fa-check-circle"></i>
+            <h2>Payment Successful!</h2>
+            <p>Your payment has been processed successfully.</p>
+            <p>Transaction ID: <span id="transactionId"></span></p>
+            <button onclick="window.location.href='courses.html'" class="popup-button">
+                Go to Course
+            </button>
+        </div>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>

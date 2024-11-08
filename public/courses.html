@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Courses - SciAstra</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">SciAstra</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="courses-container">
+        <h2>All Courses</h2>
+        <div class="courses-grid">
+            <div class="course-box">
+                <img src="https://via.placeholder.com/300x200" alt="Web Development">
+                <h3>Web Development</h3>
+                <p class="price">₹4999</p>
+                <p class="description">Learn to build modern websites with HTML, CSS, and JavaScript.</p>
+                <div class="course-details">
+                    <ul>
+                        <li>Duration: 12 weeks</li>
+                        <li>Level: Beginner</li>
+                        <li>Projects: 5</li>
+                    </ul>
+                </div>
+                <div class="course-buttons">
+                    <button class="btn-learn-more">Learn More</button>
+                    <button onclick="window.location.href='payment.html'" class="btn-buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="course-box">
+                <img src="https://via.placeholder.com/300x200" alt="Python Programming">
+                <h3>Python Programming</h3>
+                <p class="price">₹5999</p>
+                <p class="description">Master Python programming from basics to advanced concepts.</p>
+                <div class="course-details">
+                    <ul>
+                        <li>Duration: 10 weeks</li>
+                        <li>Level: Beginner to Advanced</li>
+                        <li>Projects: 8</li>
+                    </ul>
+                </div>
+                <div class="course-buttons">
+                    <button class="btn-learn-more">Learn More</button>
+                    <button onclick="window.location.href='payment.html'" class="btn-buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="course-box">
+                <img src="https://via.placeholder.com/300x200" alt="Data Science">
+                <h3>Data Science</h3>
+                <p class="price">₹7999</p>
+                <p class="description">Explore data analysis, visualization, and machine learning.</p>
+                <div class="course-details">
+                    <ul>
+                        <li>Duration: 16 weeks</li>
+                        <li>Level: Intermediate</li>
+                        <li>Projects: 6</li>
+                    </ul>
+                </div>
+                <div class="course-buttons">
+                    <button class="btn-learn-more">Learn More</button>
+                    <button onclick="window.location.href='payment.html'" class="btn-buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SciAstra. All rights reserved.</p>
+    </footer>
+</body>
+</html>
